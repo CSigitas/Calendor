@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Arvo", serif;
+  scroll-behavior: smooth;
+}
+header {
+  display: flex;
+
+  height: 60px;
+}
+.header {
+  display: flex;
+  height: 97%;
+  width: 40%;
+}
+.header > :nth-child(1) {
+  flex: 0 1 10%;
+}
+.header > :nth-child(2) {
+  flex: 0 1 20%;
+}
+.header > :nth-child(3),
+.header > :nth-child(4) {
+  flex: 0 1 20%;
+}
+.header > :nth-child(5) {
+  flex: 0 1 30%;
+}
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar-border {
+  height: 80%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.nav-bar-border div {
+  width: 30px;
+  border-bottom: 5px solid rgb(124, 124, 124);
+  margin-bottom: 5px;
+}
+.nav-bar-border:hover {
+  background-color: rgba(68, 65, 65, 0.2);
+}
+.calendor-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: rgb(78, 78, 75);
+  font-size: 15px;
+}
+.day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.day div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  height: 30px;
+  width: 90px;
+  border: 1px solid rgba(163, 156, 156, 0.5);
+}
+
+.two-bottons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.two-bottons button {
+  width: 35px;
+  background-color: white;
+  border: white;
+  height: 15px;
+  border-radius: 10px;
+}
+.two-bottons button:hover {
+  background-color: rgba(163, 156, 156, 0.2);
+}
+.calendor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-side {
+  height: 78vh;
+  width: 100%;
+}
+section {
+  width: 99.9%;
+}
+.left-side-calendor {
+  width: 17rem;
+  display: block;
+  height: 480px;
+  position: absolute;
+  top: 63px;
+}
+.left-side-calendor-style {
+  margin-top: 80px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left-side-calendor-style button {
+  width: 35px;
+  background-color: white;
+  border: white;
+  height: 15px;
+  border-radius: 10px;
+}
+.left-side-calendor-style button:hover {
+  background-color: rgba(163, 156, 156, 0.2);
+}
+.left-side-calendor-days {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.left-side-calendor-days div {
+  font-weight: 800;
+  margin: 0.3rem;
+  width: calc(17rem / 7);
+}
+.left-side-calendor-days-numb {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.left-side-calendor-days-numb div {
+  margin: 0.3rem;
+  width: calc(12.8rem / 7);
+}
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+.today {
+  background-color: rgb(131, 80, 80);
+  border-radius: 30px;
+}
+.left-side-calendor-button-style {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left-side-calendor-button {
+  height: 40%;
+  width: 70%;
+  border: 1px solid rgba(163, 156, 156, 0.5);
+  border-radius: 100px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line-1,
+.line {
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 194, 28),
+    rgb(165, 82, 82),
+    rgb(0, 0, 0)
+  );
+  height: 5px;
+  width: 20px;
+  margin-left: -20px;
+}
+.line-1 {
+  transform: rotate(90deg);
+  margin-bottom: -5px;
+}
+.line-text {
+  display: block;
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 900;
+}
+.arrow {
+  margin-top: 15px;
+}
+.hide-show {
+  display: block;
+}
+.top-calendor {
+  margin-left: 275px;
+  height: 100%;
+  width: 82%;
+}
+.top-calendor-week {
+  display: flex;
+  width: 98%;
+}
+.top-calendor-week div {
+  width: calc(95% / 7);
+  height: 100px;
+  border-bottom: 1px solid rgba(163, 156, 156, 0.4);
+  border-left: 1px solid rgba(163, 156, 156, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 900;
+  color: rgba(68, 65, 65, 0.5);
+}
+.top-calendor-week:nth-child(1) {
+  margin-left: 90px;
+}
+.top-calendor-day-hours {
+  color: rgba(68, 65, 65, 0.5);
+}
+.top-calendor-day-hours div {
+  height: 60px;
+  border-bottom: 1px solid rgba(163, 156, 156, 0.4);
+}
+.scrool {
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.scrool-top {
+  height: 84%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.scrool-top > *:nth-child(1) {
+  flex: 1 0 0.5%;
+}
+.scrool-top > *:nth-child(2) {
+  flex: 1 0 90%;
+}
+.hours-divs div {
+  height: 60px;
+  width: calc(96.1% / 7);
+  border-bottom: 1px solid rgba(163, 156, 156, 0.4);
+  border-left: 1px solid rgba(163, 156, 156, 0.4);
+}
+.hours-divs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hours-text {
+  text-align: center;
+  color: black;
+}
+.left-side-calendor-button:hover {
+  background-color: rgb(131, 80, 80);
+}
+.top-calendor-week-style {
+  display: flex;
+  flex-wrap: wrap;
+}
+.top-calendor-week-style > *:nth-child(1) {
+  flex: 1 0 0.5%;
+}
+.top-calendor-week-style > *:nth-child(2) {
+  flex: 1 0 90%;
+}
+.time-bar-div div {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(131, 80, 80);
+  position: relative;
+}
+/* .time-bar {
+  width: calc(90% / 7);
+  height: 520px;
+  background-color: rgb(131, 80, 80);
+  position: relative;
+  top: 0;
+  margin-left: calc(1390px / 2);
+} */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  transition: 200ms easy ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+.modal-active {
+  transform: translate(-50%, -50%) scale(1);
+}
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(163, 156, 156, 0.5);
+  pointer-events: none;
+}
+.data {
+  margin-left: 93px;
+}
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
