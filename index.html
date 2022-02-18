@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive Stylesheet -->
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="nav-bar">
+          <div class="nav-bar-border">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="calendor-logo">
+          <div>
+            <img src="calendar.png" height="20px" width="20px" />
+            <span>Kalendorius</span>
+          </div>
+        </div>
+        <div class="day">
+          <div>Šiandien</div>
+        </div>
+        <div class="two-bottons">
+          <button class="prev-week">←</button>
+          <button class="next-week">→</button>
+        </div>
+        <div class="calendor">
+          <div id="calendorDate"></div>
+        </div>
+      </div>
+    </header>
+    <section class="left-side">
+      <div class="top-calendor">
+        <div class="top-calendor-week-style">
+          <div></div>
+          <div class="top-calendor-week"></div>
+        </div>
+        <div class="scrool">
+          <div class="scrool-top">
+            <div class="top-calendor-day-hours"></div>
+            <div class="hours-divs"></div>
+          </div>
+        </div>
+      </div>
+      <div class="left-side-calendor">
+        <div class="left-side-calendor-button-style">
+          <div class="left-side-calendor-button" id="create-event">
+            <div>
+              <div class="line-1"></div>
+              <div class="line"></div>
+            </div>
+            <div class="line-text">Sukurti</div>
+          </div>
+          <div class="modal" id="modal">
+            <div class="modal-header">
+              <div class="title">SUKURTI PRIMINIMA</div>
+              <button id="close-button" class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+              <label>Priminimas</label> <label class="data">Data</label><br />
+              <input type="text" id="text" />
+              <input type="date" id="date" /><br />
+              <label>Laikas</label><br />
+              <input type="time" id="time" /><br /><br />
+              <button type="submit" id="takeData">OK</button>
+            </div>
+          </div>
+        </div>
+        <div class="hide-show">
+          <div class="left-side-calendor-style">
+            <div class="left-side-calendor-yearDate">
+              <button id="prev-month">←</button> &nbsp&nbsp
+              <span class="left-side-calendor-yearDate-span"></span>
+              &nbsp&nbsp<button id="second-month">→</button>
+            </div>
+          </div>
+          <div class="left-side-calendor-days">
+            <div>S</div>
+            <div>P</div>
+            <div>A</div>
+            <div>T</div>
+            <div>K</div>
+            <div>P</div>
+            <div>Š</div>
+          </div>
+          <div class="left-side-calendor-days-numb"></div>
+        </div>
+      </div>
+      <div id="overlay"></div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
